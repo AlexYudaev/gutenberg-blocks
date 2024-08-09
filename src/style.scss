@@ -5,8 +5,26 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-create-block-first-block {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.iframe-wrapper{
+	position: relative;
+	padding-bottom: 56%;
+	width: 100%;
+
+	img,
+	iframe{
+		position: absolute;
+		inset:0;
+		height: 100%;
+		width: 100%;
+		pointer-events: none;
+		aspect-ratio: 560/315;
+	}
+
+	.iframe-shape{
+		position: absolute;
+		top:0;
+		left:0;
+		inset:0;
+		z-index: 1;
+	}
 }
